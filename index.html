@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://media.crocs.com/images/t_pdphero/f_auto%2Cq_auto/products/10012549_001_ALT100/crocs" type="png" sizes="TAMAÑO-FAV">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Rick and Morty</title>
+</head>
+<body>
+  <div class="navbar-section">
+    <div class="navbar">
+      <img src="https://www.logolynx.com/images/logolynx/96/96572f804019b5ac41f48e97e635fade.png" alt="">
+      <nav>
+        <a href="#about-section">About</a>
+        <a href="#characters-section">Characters</a>
+        <a href="#contact-section">Contact me</a>
+      </nav>
+    </div>
+
+  </div>
+  <div id="about-section">
+    <img src="http://cdn.shopify.com/s/files/1/1325/3287/collections/rick-morty.png?v=1660054592" alt="rick and morty logo">
+    <P>On this web page you can find information about some  <span>Rick and Morty</span> characters, their name, their current status and their species, all thanks to the <a href="https://rickandmortyapi.com/"target="_blank">Rick and Morty API.</a></P>
+  </div>
+  <div id="characters-section">
+    <h2>Characters
+    <select name="page" id="page" onchange="apiRick(this.value)">
+      <script>
+        for (let i = 1; i <= 42; i++) {
+          document.write(`<option value = "${i}">${i}</option>`)
+        }
+      </script>
+    </select>
+    </h2>
+     <div id="content-section">
+      <!-- CONTENT -->
+
+     
+    <!-- content end -->
+  </div>
+  </div>
+  <div id="contact-section">
+    <div class="footer">
+      <h1>KEEP IN CONTACT</h1>
+      <figure>
+        <a href="https://github.com/adrianfvp" target="_blank"><img src="./assets/icons/signo-de-github.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/adrianfvp/" target="_blank"><img src="./assets/icons/logotipo-de-linkedin.png" alt="Linkedin"></a>
+      </figure>
+    </div>
+    <p>I'm ready to work with you.</p>
+    
+  </div>
+  <script src="./assets/main.js"></script>
+</body>
+</html>
