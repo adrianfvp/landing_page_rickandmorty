@@ -79,17 +79,31 @@ span {
 
 h2 {
     font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+select {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #14151d;
+    border: #14151d;
+    height: 30px;
+    padding: 8px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .card {
-    width: 400px;
+    width: 430px;
     height: 200px;
     display: flex;
-    background-color: rgba(87, 87, 87, 0.113);
-    margin: 5px;
+    background-color: rgba(177, 177, 177, 0.113);
+    margin: 10px;
     border-radius: 20px;
     align-items: center;
-    box-shadow: rgba(6, 6, 6, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 .card img {
@@ -99,10 +113,18 @@ h2 {
 }
 
 .card h3, h4, h4 {
-    margin: 10px;
+    margin: 0px;
 }
 
-.content-section {
+.card h3 {
+    color: #53feed;
+}
+
+.card .location {
+    color: #61fb01;
+}
+
+#content-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -149,16 +171,18 @@ h2 {
 
 @media (max-width: 880px) {
     .card {
-        height: 150px;
-        width: 320px;
+        height: 170px;
+        width: 370px;
     }
 
     .card h3 {
         font-size: 17px;
+        margin: 0px;
     }
 
     .card h4 {
         font-size: 14px;
+        margin: 0px;
     }
 }
 
@@ -170,10 +194,12 @@ h2 {
 
     .card h3 {
         font-size: 15px;
+        margin: 0;
     }
 
     .card h4 {
         font-size: 13px;
+        margin: 0px;
     }
 
     #about-section p {

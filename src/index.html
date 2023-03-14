@@ -25,64 +25,21 @@
     <P>On this web page you can find information about some  <span>Rick and Morty</span> characters, their name, their current status and their species, all thanks to the <a href="https://rickandmortyapi.com/"target="_blank">Rick and Morty API.</a></P>
   </div>
   <div id="characters-section">
-    <h2>Characters</h2>
-    <!-- content -->
-    <div class="content-section">
-      <div class="card">
-        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2NjMyODQ1OTQ0MTg2/rick-sanchez-character-analysis-not-a-nihilist-but-a-cynic.jpg" alt="Rick Sanchez">
-        <div class="info">
-          <h3>Rick Sanchez</h3>
-          <h4>Alive</h4>
-          <h4>Human</h4>
-        </div>
-      </div>
+    <h2>Characters
+    <select name="page" id="page" onchange="apiRick(this.value)">
+      <script>
+        for (let i = 1; i <= 42; i++) {
+          document.write(`<option value = "${i}">${i}</option>`)
+        }
+      </script>
+    </select>
+  </h2>
+     <div id="content-section">
+      <!-- CONTENT -->
 
-      <div class="card">
-        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2NjMyODQ1OTQ0MTg2/rick-sanchez-character-analysis-not-a-nihilist-but-a-cynic.jpg" alt="Rick Sanchez">
-        <div class="info">
-          <h3>Rick Sanchez</h3>
-          <h4>Alive</h4>
-          <h4>Human</h4>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2NjMyODQ1OTQ0MTg2/rick-sanchez-character-analysis-not-a-nihilist-but-a-cynic.jpg" alt="Rick Sanchez">
-        <div class="info">
-          <h3>Rick Sanchez</h3>
-          <h4>Alive</h4>
-          <h4>Human</h4>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2NjMyODQ1OTQ0MTg2/rick-sanchez-character-analysis-not-a-nihilist-but-a-cynic.jpg" alt="Rick Sanchez">
-        <div class="info">
-          <h3>Rick Sanchez</h3>
-          <h4>Alive</h4>
-          <h4>Human</h4>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2NjMyODQ1OTQ0MTg2/rick-sanchez-character-analysis-not-a-nihilist-but-a-cynic.jpg" alt="Rick Sanchez">
-        <div class="info">
-          <h3>Rick Sanchez</h3>
-          <h4>Alive</h4>
-          <h4>Human</h4>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc0NjQ2NjMyODQ1OTQ0MTg2/rick-sanchez-character-analysis-not-a-nihilist-but-a-cynic.jpg" alt="Rick Sanchez">
-        <div class="info">
-          <h3>Rick Sanchez</h3>
-          <h4>Alive</h4>
-          <h4>Human</h4>
-        </div>
-      </div>
-    </div>
+     
     <!-- content end -->
+  </div>
   </div>
   <div id="contact-section">
     <div class="footer">
@@ -93,6 +50,8 @@
       </figure>
     </div>
     <p>I'm ready to work with you.</p>
+    
   </div>
+  <script src="./assets/main.js"></script>
 </body>
 </html>
